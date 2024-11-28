@@ -17,11 +17,12 @@ Fedora KDE Spin is a powerful and highly customizable Linux distribution. This g
 
 After installation, update your system to ensure all packages are up-to-date:
 
-1. Run the following commands:  
-   `sudo dnf group update core`  
+1. Run the following commands:   
    `sudo dnf -y update`  
-   `sudo dnf -y upgrade --refresh`  
-
+   `sudo dnf -y upgrade --refresh`
+   `sudo dnf autoremove`
+   `sudo dnf clean all`
+     
 ---
 
 ## Enable RPM Fusion Repositories
