@@ -1,3 +1,75 @@
-
-Background/.DS_Store
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# macOS Finder settings
+.Spotlight-V100
+.Trashes
+
+# macOS metadata
+*.swp
+*.lock
+*.bak
+*.tmp
+*.DS_Store
+.fseventsd
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+.cache/
+.Trash-*/
+.nfs*
+
+# Editor swap files
+*.swp
+*.swo
+*.tmp
+
+# Log files
+*.log
+
+# Temporary files
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+
+# System files
+*.pid
+
+# Compiled object files
+*.o
+*.obj
+*.elf
+
+# Backup files
+*.bak
+*.backup
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Package directories
+node_modules/
+vendor/
+.idea/
+.vscode/
