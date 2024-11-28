@@ -153,7 +153,7 @@ Akonadi is a backend service for some KDE applications (e.g., KMail and Kontact)
 
 ---
 
-## Apps I Use for Daily Work (School/Media)
+## Apps I Use for Daily Work (School/IT/Casual)
 
 Here’s a list of programs I use for my daily tasks:
 
