@@ -7,6 +7,16 @@ This repository provides a detailed post-installation guide for Fedora KDE Spin.
 
 ---
 
+## Download
+
+1. **Download Fedora KDE Spin ISO**:  
+   You can download the official Fedora KDE Spin ISO from the Fedora Spins website:  
+   [Fedora KDE Spin ISO](https://fedoraproject.org/spins/kde)
+
+2. **Create a Bootable USB Drive**:  
+   Use [Balena Etcher](https://etcher.balena.io/) to flash the ISO onto a USB drive. Balena Etcher is available for Windows, macOS, and Linux, and it's easy to use.
+   
+
 ## Introduction
 
 Fedora KDE Spin is a powerful and highly customizable Linux distribution. This guide outlines a few tweaks to improve the experience and usability.
