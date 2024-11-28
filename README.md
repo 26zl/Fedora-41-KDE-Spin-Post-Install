@@ -170,7 +170,7 @@ Akonadi is a backend service for some KDE applications (e.g., KMail and Kontact)
 
 ---
 
-## Apps I Use for Daily Work (School/IT/Casual)
+## Apps I use atm when using Fedora
 
 Here’s a list of programs I use for my daily tasks:
 
@@ -180,10 +180,9 @@ Here’s a list of programs I use for my daily tasks:
 - Spotify  
 - Remmina  
 - Mullvad VPN  
-- Kitty (Kitty config is included)  
+- Kitty   
 - Kate  
 - Htop  
-- GtkStressTesting  
 - GParted  
 - GNU  
 - gedit  
