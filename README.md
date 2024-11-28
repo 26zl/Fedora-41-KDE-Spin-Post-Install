@@ -15,13 +15,18 @@ Fedora KDE Spin is a powerful and highly customizable Linux distribution. This g
 
 ## System Updates
 
-After installation, update your system to ensure all packages are up-to-date:
+After installation, it's important to update your system to ensure all packages are up-to-date and unnecessary files are removed.
 
-1. Run the following commands:   
-   `sudo dnf -y update`  
-   `sudo dnf -y upgrade --refresh`
-   `sudo dnf autoremove`
-   `sudo dnf clean all`
+1. Update your system by running the following commands:
+   - sudo dnf -y upgrade --refresh
+   - sudo dnf -y update
+   - Also check for pending updates in Discover app just to be sure
+
+2. Reboot your system to apply updates.
+
+3. After rebooting, clean up unnecessary packages and cached files:
+   - sudo dnf autoremove
+   - sudo dnf clean all
      
 ---
 
