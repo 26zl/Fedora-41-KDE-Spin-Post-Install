@@ -214,28 +214,44 @@ Alternatively, for multiboot systems, I recommend using Refind:
 
 ## Tips and Tricks
 
-- **Check Autostart Applications**:
-Ensure unnecessary applications are not set to start automatically during boot. This can help improve system performance and reduce boot times. You can manage autostart applications in the KDE System Settings under the "Startup and Shutdown" section.
+- **Check Autostart Applications**:  
+  Ensure unnecessary applications are not set to start automatically during boot. This can help improve system performance and reduce boot times. You can manage autostart applications in the KDE System Settings under the "Startup and Shutdown" section.
 
-- **Disable SSH for Security**: If you don’t need SSH, disabling the service can improve system security. To disable SSH:
-  - Turn off the service to stop it immediately.
-  - Prevent the service from starting on boot.
-  - If you need SSH again, you can re-enable it in the same way.
+- **Disable SSH for Security**:  
+  If you don’t need SSH, disabling the service can improve system security. Run these commands to disable SSH:
+  - `sudo systemctl disable sshd`
+  - `sudo systemctl stop sshd`  
+  If you need SSH again, you can re-enable it with:
+  - `sudo systemctl enable sshd`
+  - `sudo systemctl start sshd`
 
-- **Firewall Configuration**: Fedora uses FirewallD by default. Ensure it is configured to suit your network and security requirements. You can manage it through the command line or via the FirewallD GUI tool.
+- **Firewall Configuration**:  
+  Fedora uses FirewallD by default. Ensure it is configured to suit your network and security requirements. You can view the current configuration with:
+  - `sudo firewall-cmd --list-all`
+  - Otherwise check out their GUI inside KDE Plasma settings
 
-- **Customize KDE Plasma**:
-KDE Plasma is highly customizable. Take time to adjust the panel, widgets, and shortcuts to create a workflow that suits your needs. For example:
+- **Customize KDE Plasma**:  
+  KDE Plasma is highly customizable. Take time to adjust the panel, widgets, and shortcuts to create a workflow that suits your needs. For example:
   - Add widgets to track CPU, memory, or network usage.
   - Customize the application menu layout.
   - Change window behaviors to improve multitasking.
 
-- **Avoid Snaps**: While Snap packages are common on Ubuntu, you can avoid installing them on Fedora. Fedora focuses on RPMs and Flatpaks, which are better integrated into the system.
+- **Avoid Snaps**:  
+  While Snap packages are common on Ubuntu, you can avoid installing them on Fedora. Fedora focuses on RPMs and Flatpaks, which are better integrated into the system. If you really want Snap, you can install it using:
+  - `sudo dnf install snapd`
+  After installation, reboot and enable it with:
+  - `sudo systemctl enable --now snapd.socket`
 
-- **Battery Optimization for Laptops**: Fedora 41 includes built-in battery optimization tools for laptops, so additional tools like TLP may not be necessary. To check your battery settings:
+- **Battery Optimization for Laptops**:  
+  Fedora 41 includes built-in battery optimization tools for laptops, so additional tools like TLP may not be necessary. To check your battery settings:
   - Open the KDE System Settings and go to the "Power Management" section.
-  - Adjust screen brightness, sleep settings, and CPU performance to extend battery life.
-
+  - Adjust screen brightness, sleep settings, and CPU performance to extend battery life.  
+  If you still want TLP for advanced battery management, you can install it with:
+  - `sudo dnf install tlp`
+  Enable and start it with:
+  - `sudo systemctl enable tlp`
+  - `sudo systemctl start tlp`
+For more check out: https://linrunner.de/tlp/index.html
 ---
 
 ## Resources
