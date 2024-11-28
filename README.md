@@ -1,9 +1,7 @@
 # My Way of Tweaking Fedora KDE Spin
 
-
-![Fastfetch Output](./images/fastfetch.png "Fastfetch showing system information")
-![Desktop Overview](./images/beauty.png "Fedora KDE Desktop Overview")
-
+![image](https://github.com/user-attachments/assets/63eb22f5-6042-4343-ac62-d1f999027c7c)
+![image](https://github.com/user-attachments/assets/aaf0b820-e21c-4083-b5a1-97506a58c648)
 
 This repository provides a detailed post-installation guide for Fedora KDE Spin. It includes essential updates, multimedia enhancements, hardware acceleration, and system optimizations to optimize Fedora KDE to your needs.
 
