@@ -3,7 +3,7 @@
 ![image](https://github.com/user-attachments/assets/63eb22f5-6042-4343-ac62-d1f999027c7c)
 ![image](https://github.com/user-attachments/assets/aaf0b820-e21c-4083-b5a1-97506a58c648)
 
-This repository provides a detailed post-installation guide for Fedora KDE Spin. It includes essential updates, multimedia enhancements, hardware acceleration, and system optimizations to optimize Fedora KDE to your needs.
+This repository gives you a detailed post-installation guide for Fedora 41 KDE Spin. It includes essential updates, multimedia enhancements, hardware acceleration, and system optimizations to optimize Fedora KDE to your needs.
 
 ---
 
@@ -19,7 +19,7 @@ This repository provides a detailed post-installation guide for Fedora KDE Spin.
 
 ## Introduction
 
-Fedora KDE Spin is a powerful and highly customizable Linux distribution. This guide outlines a few tweaks to improve the experience and usability.
+Fedora KDE Spin is a powerful and highly customizable Linux distribution. This guide outlines a few tweaks to improve the experience and usability even more.
 
 ---
 
@@ -99,7 +99,7 @@ For NVIDIA hardware, follow this guide:
 ---
 ## General Security
 
-Fedora is very secure by default, and you usually don’t need to do much to improve it. 
+Fedora is very secure by default, and you usually don’t need to do much to improve it.
 
 ### Learn More:
 - [Fedora Security Features](https://fedoraproject.org/wiki/Security_Features)
