@@ -175,9 +175,10 @@ Akonadi is a backend service for some KDE applications (e.g., KMail and Kontact)
 
 ---
 
-## Apps I use atm when using Fedora
+## Apps i use atm when using Fedora
 
-Here’s a list of programs I use for my daily tasks:
+Use `sudo dnf install "package"` 
+to install
 
 - VSCodium  
 - VLC  
