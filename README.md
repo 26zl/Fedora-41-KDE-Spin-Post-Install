@@ -214,10 +214,27 @@ Alternatively, for multiboot systems, I recommend using Refind:
 
 ## Tips and Tricks
 
-- Check autostart to ensure unnecessary applications are not set to start at boot.  
-- Disable SSH if it’s not needed to improve security.  
-- Check Firewall settings. Fedora uses FirewallD by default—ensure it’s configured to your needs.  
-- Customize the panel and widgets in KDE Plasma to suit your workflow.  
+- **Check Autostart Applications**:
+Ensure unnecessary applications are not set to start automatically during boot. This can help improve system performance and reduce boot times. You can manage autostart applications in the KDE System Settings under the "Startup and Shutdown" section.
+
+- **Disable SSH for Security**: If you don’t need SSH, disabling the service can improve system security. To disable SSH:
+  - Turn off the service to stop it immediately.
+  - Prevent the service from starting on boot.
+  - If you need SSH again, you can re-enable it in the same way.
+
+- **Firewall Configuration**: Fedora uses FirewallD by default. Ensure it is configured to suit your network and security requirements. You can manage it through the command line or via the FirewallD GUI tool.
+
+- **Customize KDE Plasma**:
+KDE Plasma is highly customizable. Take time to adjust the panel, widgets, and shortcuts to create a workflow that suits your needs. For example:
+  - Add widgets to track CPU, memory, or network usage.
+  - Customize the application menu layout.
+  - Change window behaviors to improve multitasking.
+
+- **Avoid Snaps**: While Snap packages are common on Ubuntu, you can avoid installing them on Fedora. Fedora focuses on RPMs and Flatpaks, which are better integrated into the system.
+
+- **Battery Optimization for Laptops**: Fedora 41 includes built-in battery optimization tools for laptops, so additional tools like TLP may not be necessary. To check your battery settings:
+  - Open the KDE System Settings and go to the "Power Management" section.
+  - Adjust screen brightness, sleep settings, and CPU performance to extend battery life.
 
 ---
 
