@@ -1,4 +1,4 @@
-# My Way of Tweaking Fedora KDE Spin
+# My Way of Tweaking Fedora 41 KDE-Spin
 
 ![image](https://github.com/user-attachments/assets/63eb22f5-6042-4343-ac62-d1f999027c7c)
 ![image](https://github.com/user-attachments/assets/aaf0b820-e21c-4083-b5a1-97506a58c648)
