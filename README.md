@@ -92,10 +92,6 @@ Enable VA-API for improved video playback:
    `sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld`  
    `sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld`  
 
-4. Verify installation:  
-   `vainfo`  
-   `ffmpeg -hwaccel vaapi -i input.mp4 -f null -`  
-
 For NVIDIA hardware, follow this guide:  
 - https://rpmfusion.org/Howto/NVIDIA  
 - https://www.reddit.com/r/Fedora/comments/18bj1kt/fedora_nvidia_secure_boot  
