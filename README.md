@@ -97,6 +97,15 @@ For NVIDIA hardware, follow this guide:
 - https://www.reddit.com/r/Fedora/comments/18bj1kt/fedora_nvidia_secure_boot  
 
 ---
+## General Security
+
+Fedora is very secure by default, and you usually don’t need to do much to improve it. 
+
+### Learn More:
+- [Fedora Security Features](https://fedoraproject.org/wiki/Security_Features)
+- [Linux Security Tips](https://wiki.archlinux.org/title/Security)
+
+These links have more information if you want to learn about security on Fedora and Linux in general.
 
 ## Secure Boot Configuration
 
@@ -262,7 +271,8 @@ For more check out: https://linrunner.de/tlp/index.html
 
 ## Resources
 
-- [Fedora Documentation](https://docs.fedoraproject.org/en-US/docs/)  
+- [Fedora Documentation](https://docs.fedoraproject.org/en-US/docs/)
+- [Arch Linux Doucmentation great for Linux in general regardless distro](https://wiki.archlinux.org/title/Main_page)
 - [r/Fedora](https://www.reddit.com/r/Fedora/)  
 - [r/KDE](https://www.reddit.com/r/kde/)  
 
