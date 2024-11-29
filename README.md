@@ -67,16 +67,16 @@ Enable Flatpak support and add the Flathub repository:
 ## Multimedia Enhancements
 
 1. Switch to the full version of FFMPEG:  
-   `sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing`  
+  - `sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing`  
 
 2. Install multimedia packages:  
-   `sudo dnf group install multimedia`
-   `sudo dnf install lame* --exclude=lame-devel`
-   `sudo dnf group upgrade --with-optional --allowerasing Multimedia`
+   - `sudo dnf group install multimedia`
+   - `sudo dnf install lame* --exclude=lame-devel`
+   - `sudo dnf group upgrade --with-optional --allowerasing Multimedia`
 
 4. Update multimedia components:  
-   `sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`  
-   `sudo dnf update @sound-and-video`  
+  - `sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`  
+  - `sudo dnf update @sound-and-video`  
 
 ---
 
