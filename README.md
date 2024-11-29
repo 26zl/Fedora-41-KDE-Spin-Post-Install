@@ -70,9 +70,11 @@ Enable Flatpak support and add the Flathub repository:
    `sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing`  
 
 2. Install multimedia packages:  
-   `sudo dnf group install Multimedia`  
+   `sudo dnf group install multimedia`
+   `sudo dnf install lame* --exclude=lame-devel`
+   `sudo dnf group upgrade --with-optional --allowerasing Multimedia`
 
-3. Update multimedia components:  
+4. Update multimedia components:  
    `sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`  
    `sudo dnf update @sound-and-video`  
 
@@ -116,6 +118,8 @@ Secure Boot may require special setup for proprietary drivers (e.g., NVIDIA). Fo
 
 ## Enable OpenH264 for Firefox
 
+Firefox is installed as default browser on Fedora 41 
+
 1. Enable the Cisco OpenH264 repository:  
    `sudo dnf config-manager --set-enabled fedora-cisco-openh264`  
 
@@ -129,10 +133,11 @@ Secure Boot may require special setup for proprietary drivers (e.g., NVIDIA). Fo
 
 ---
 
-## Check H.264 in Chromium
+## Install Google Chrome
 
-Verify H.264 support:  
-- Visit this test page: https://mozilla.github.io/webrtc-landing/pc_test_no_h264.html  
+https://support.google.com/chrome/a/answer/9025903?hl=en
+
+All media & sound codecs will automatically be applied to Chrome after install
 
 ---
 
