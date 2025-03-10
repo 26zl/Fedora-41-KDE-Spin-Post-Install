@@ -186,7 +186,8 @@ tuned-adm off
 - **Window Decorations**: Edna (Install via the "Get New" button in KDE settings)  
 - **Icons**: [Colloid Dark](https://github.com/vinceliuice/Colloid-gtk-theme)  
 - **Cursors**: WhiteSur Cursors  
-- **Login Screen**: Breeze Fedora  
+- **Login Screen**: Breeze Fedora
+- **Console**: Kitty (Check out my kitty config in the repo)  
 
 ---
 
@@ -228,6 +229,36 @@ sudo dnf install "package"
 ---
 
 ## **Additional Configurations**
+
+## **Enable OpenH264 for Firefox**
+
+Firefox is installed as the default browser on Fedora 41.
+
+1. Enable the Cisco OpenH264 repository:  
+   ```bash
+   sudo dnf config-manager --set-enabled fedora-cisco-openh264
+   ```
+2. Install OpenH264 packages:  
+   ```bash
+   sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264
+   ```
+3. Enable the plugin in Firefox:  
+   - Open Firefox.  
+   - Go to **Settings > Plugins**.  
+   - Enable the OpenH264 Plugin.  
+
+---
+
+## **Debloat KDE by Removing Akonadi**
+
+Akonadi is a backend service for some KDE applications (e.g., KMail and Kontact). If you don’t use these apps, you can remove Akonadi to reduce system bloat:
+
+```bash
+sudo dnf remove \*akonadi\*
+sudo dnf autoremove
+sudo dnf clean all
+```
+**Note**: Ensure you don’t rely on Akonadi-based KDE apps before proceeding.
 
 ### Set Hostname
 Set a custom hostname:  
