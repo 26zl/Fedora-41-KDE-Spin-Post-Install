@@ -18,6 +18,12 @@ This repository gives you a detailed post-installation guide for Fedora 41 KDE S
 
 ---
 
+## **Introduction**
+
+Fedora KDE Spin is a powerful and highly customizable Linux distribution. This guide outlines a few tweaks to improve the experience and usability even more.
+
+---
+
 ## **System Updates**
 
 After installation, it's important to update your system.
@@ -122,25 +128,6 @@ Fedora is secure by default, but for extra security, check:
 
 ---
 
-## **Enable OpenH264 for Firefox**
-
-Firefox is installed as the default browser on Fedora 41.
-
-1. Enable the Cisco OpenH264 repository:  
-   ```bash
-   sudo dnf config-manager --set-enabled fedora-cisco-openh264
-   ```
-2. Install OpenH264 packages:  
-   ```bash
-   sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264
-   ```
-3. Enable the plugin in Firefox:  
-   - Open Firefox.  
-   - Go to **Settings > Plugins**.  
-   - Enable the OpenH264 Plugin.  
-
----
-
 ## **Battery Optimization for Laptops**
 
 Fedora 41 includes built-in battery optimization tools, but for advanced battery management, I recommend **TuneD**:
@@ -186,20 +173,57 @@ tuned-adm off
 
 ~~## Battery Optimization for Laptops~~
 
-~~Fedora 41 includes built-in battery optimization tools for laptops, so additional tools like TLP may not be necessary. To check your battery settings:~~  
-~~- Open the KDE System Settings and go to the "Power Management" section.~~  
-~~- Adjust screen brightness, sleep settings, and CPU performance to extend battery life.~~  
+~~For more check out: [TLP Documentation](https://linrunner.de/tlp/index.html)~~
 
-~~If you still want TLP for advanced battery management, you can install it with:~~
+---
+
+## **KDE Themes and Appearance**
+
+- **Global Theme**: Breeze Dark  
+- **Colors**: Breeze Dark  
+- **Application Style**: Breeze  
+- **Plasma Style**: Breeze  
+- **Window Decorations**: Edna (Install via the "Get New" button in KDE settings)  
+- **Icons**: [Colloid Dark](https://github.com/vinceliuice/Colloid-gtk-theme)  
+- **Cursors**: WhiteSur Cursors  
+- **Login Screen**: Breeze Fedora  
+
+---
+
+## **Bootloader Customization**
+
+For GRUB, I use this theme for a cleaner look:  
+- [GRUB2 Themes](https://github.com/vinceliuice/grub2-themes)  
+
+---
+
+## **Apps I Use on Fedora**
+
+To install, use:
 ```bash
-~~sudo dnf install tlp~~
+sudo dnf install "package"
 ```
-~~Enable and start it with:~~
-```bash
-~~sudo systemctl enable tlp~~
-~~sudo systemctl start tlp~~
-```
-~~For more information: [TLP Documentation](https://linrunner.de/tlp/index.html)~~
+
+- VSCodium  
+- VLC  
+- Spyder  
+- Spotify  
+- Remmina  
+- Mullvad VPN  
+- Kitty   
+- Kate  
+- Htop  
+- GParted  
+- GNU  
+- gedit  
+- Discord  
+- DBeaver CE  
+- Chromium  
+- Firefox  
+- chkrootkit  
+- Bluefish Editor  
+- bpython  
+- fastfetch  
 
 ---
 
@@ -220,20 +244,6 @@ Avoid time inconsistencies when dual-booting with another operating system:
 ```bash
 sudo timedatectl set-local-rtc '0'
 ```
-
----
-
-## **Debloat KDE by Removing Akonadi**
-
-Akonadi is a backend service for some KDE applications (e.g., KMail and Kontact). If you don’t use these apps, you can remove Akonadi to reduce system bloat:
-
-```bash
-sudo dnf remove \*akonadi\*
-sudo dnf autoremove
-sudo dnf clean all
-```
-
-**Note**: Ensure you don’t rely on Akonadi-based KDE apps before proceeding.
 
 ---
 
